@@ -1,0 +1,91 @@
+.callback {
+  &__form-wrapper {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+  &__form {
+  }
+  &__form-title {
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input-wrapper {
+    width: 100%;
+  }
+  &__input-text {
+    font-weight: 700;
+  }
+  &__input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $lightColor;
+    margin: 10px 0;
+  }
+  &__input-wrapper + .callback__input-wrapper {
+    margin-left: 15px;
+  }
+  &__message {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid $lightColor;
+    margin: 10px 0;
+  }
+  &__btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input-btn {
+    padding: 10px 20px;
+    font-weight: 700;
+    color: $white;
+    background-color: $accentColor;
+    transition: $transition;
+    cursor: pointer;
+    &:hover {
+      background-color: $accentHoverColor;
+    }
+  }
+  &__checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__checkbox-text {
+    margin-left: 10px;
+    font-weight: 700;
+  }
+  &__egreement-link {
+    color: $accentColor;
+  }
+}
+
+@media screen and (max-width: $breakpoint768) {
+  .callback {
+    &__wrapper {
+      display: block;
+    }
+    &__input-wrapper + .callback__input-wrapper {
+      margin-left: 0;
+    }
+    &__btn-box {
+      display: flex;
+      flex-direction: column;
+    }
+    &__input-btn {
+      order: 1;
+    }
+    &__checkbox-wrapper {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint480) {
+}

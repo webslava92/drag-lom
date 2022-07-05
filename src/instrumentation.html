@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скупка приборов в Севастополе</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <div class="content">
+
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main>
+
+        <section class="paginations">
+          <div class="paginations__inner">
+            <div class="container">
+              <div class="paginations__info-box">
+                <h5 class="paginations__title">
+                  Приборы
+                </h5>
+                <ul class="paginations__items">
+                  <li class="paginations__item">
+                    <a href="index.html" class="paginations__item-link">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="paginations__item">
+                    <div class="paginations__item-link paginations__item-link-open">
+                      Приборы
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Instrumentation -->
+        @@include('./html/_instrumentation.html')
+
+      </main>
+    </div>
+
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+
+  </div>
+
+  <!-- Modal -->
+  @@include('./html/_modal.html')
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>

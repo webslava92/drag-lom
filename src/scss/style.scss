@@ -1,0 +1,20 @@
+// Global SCSS imports
+@import './vars';
+@import './reset';
+@import './global';
+
+
+// Sections SCSS files imports
+@import './header';
+@import './index';
+@import './callback';
+@import './radio-components';
+@import './preferences';
+@import './boards';
+@import './instrumentation';
+@import './footer';
+
+
+// Libs 
+@import './libs/swiper';
+

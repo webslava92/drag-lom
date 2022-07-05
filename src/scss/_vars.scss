@@ -1,0 +1,40 @@
+// Container & Breakpoints
+@use "sass:math";
+$containerWidth: 1200;
+$containerPadding: 40;
+$containerSidePadding: math.div($containerPadding, 2);
+$breakpoint1400: 1339.98+px;
+$breakpoint1024: 1023.98+px;
+$breakpoint992: 991.98+px;
+$breakpoint768: 767.98+px;
+$breakpoint480: 479.98+px;
+$breakpoint400: 399.98+px;
+
+
+// Fonts
+$fontMain: 'Roboto', sans-serif;
+$fontSecondary: '';
+$microFontSize: 10px;
+$smallFontSize: 12px;
+$defaultFontSize: 14px;
+$midleFontSize: 16px;
+$bigFontSize: 18px;
+$titleFontSize: 30px;
+$subtitleFontSize: 21px;
+
+
+//Colors
+$burgerActiveColor: 'white';
+$navBgColor: #ffffff;
+$defaultBgColor: #ffffff;
+$accentBgColor: #292b33;
+$white: #ffffff;
+$lightColor: #cccccc;
+$submenuBgColor: #f3f3f3;
+$defaultColor: #333333;
+$accentColor: #0066a9;
+$accentHoverColor: #004675;
+$alarmColor: red;
+
+//Transitions 
+$transition: all .3s

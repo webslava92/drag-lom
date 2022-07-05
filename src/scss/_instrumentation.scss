@@ -1,0 +1,100 @@
+.instrumentation {
+  padding: 40px 0;
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  &__item {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 340px;
+    padding: 50px 25px;
+  }
+  &__item-1 {
+    background-image: url("../img/instrumentation/instrumentation-1.png");
+  }
+  &__item-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  &__item-2 {
+    background-image: url("../img/instrumentation/instrumentation-2.png");
+  }
+  &__item-3 {
+    background-image: url("../img/instrumentation/instrumentation-3.png");
+  }
+  &__item-4 {
+    background-image: url("../img/instrumentation/instrumentation-4.png");
+  }
+  &__item-5 {
+    background-image: url("../img/instrumentation/instrumentation-5.png");
+  }
+  &__item-6 {
+    background-image: url("../img/instrumentation/instrumentation-6.png");
+  }
+  &__item-7 {
+    background-image: url("../img/instrumentation/instrumentation-7.png");
+  }
+  &__item-8 {
+    background-image: url("../img/instrumentation/instrumentation-8.png");
+  }
+  &__item-9 {
+    background-image: url("../img/instrumentation/instrumentation-9.png");
+  }
+  &__list-last-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+  }
+  &__item-10 {
+    background-image: url("../img/instrumentation/instrumentation-10.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    max-width: 340px;
+    width: 100%;
+    height: 340px;
+  }
+  &__item-11 {
+    background-image: url("../img/instrumentation/instrumentation-11.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 340px;
+    width: 100%;
+    height: 340px;
+  }
+  &__btn {
+    padding: 20px 40px;
+    font-size: $bigFontSize;
+  }
+}
+
+@media screen and (max-width: $breakpoint992) {
+  .instrumentation {
+    &__list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint768) {
+  .instrumentation {
+    &__list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__item-inner {
+      justify-content: center;
+    }
+    &__list-last-items {
+      display: block;
+    }
+  }
+}

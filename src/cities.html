@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скупка радиодеталей в городах Крыма и Севастополе. Цены на прием радиолома в разных городах</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+</head>
+
+<body class="main__body">
+  <div class="wrapper">
+    <div class="content">
+      <!-- Header -->
+      @@include('./html/_header.html')
+
+      <!-- Main Page -->
+      <main class="main">
+
+        <section class="paginations">
+          <div class="paginations__inner">
+            <div class="container">
+              <div class="paginations__info-box">
+                <h5 class="paginations__title">
+                  Города
+                </h5>
+                <ul class="paginations__items">
+                  <li class="paginations__item">
+                    <a href="index.html" class="paginations__item-link">
+                      Главная
+                    </a>
+                  </li>
+                  <li class="paginations__item">
+                    <div class="paginations__item-link paginations__item-link-open">
+                      Города
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cities -->
+        @@include('./html/_cities.html')
+
+        <div class="cities__text-box">
+          <div class="container">
+            <div class="text-box">
+              <h3 class="text-box__title">
+                Скупка радиодеталей и электронного лома в городах Крыма и Севастополе
+              </h3>
+              <p class="text-box__text">
+                Мы ценим каждого клиента, именно поэтому стремимся максимально упростить процесс покупки-продажи металлолома. Наша
+                компания предлагает следующие варианты доставки радиолома из любой точки РФ: доставка Почтой России, авиадоставка,
+                доставка ЖД, доставка грузовым авто и самовывоз. В зависимости от типа, веса материала и местоположения, наши
+                менеджеры
+                подскажут какой способ наиболее удобный. После чего оформят заказ и проконсультируют о дальнейших действиях.
+                Обращаясь к
+                нам, вы сможете не только заработать, продав ненужный лом, но и сэкономите собственное время.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <!-- Footer -->
+    @@include('./html/_footer.html')
+
+  </div>
+
+  <!-- Modal -->
+  @@include('./html/_modal.html')
+
+</body>
+
+<script src="./js/scripts.min.js"></script>
+
+</html>
